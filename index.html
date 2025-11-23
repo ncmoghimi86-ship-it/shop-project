@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nc Shopping - Online Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- صفحه لودینگ اولیه + اسکلتون -->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+    <p>Loading products...</p>
+  </div>
+  <!-- هدر ثابت صفحه -->
+  <header>
+    <div class="container nav-container">
+      <!-- لوگوی فروشگاه -->
+      <h1 class="logo">Nc Shopping</h1>
+      
+      <!-- دکمه‌های بالای صفحه -->
+      <div class="nav-actions">
+        <!-- دکمه تغییر تم (تیره/روشن) -->
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+        
+        <!-- دکمه سبد خرید -->
+        <button class="cart-btn" aria-label="Open cart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-qty">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- بخش اصلی محصولات -->
+  <main>
+    <div class="container">
+      <div class="products">
+        <!-- محصولات اینجا با جاوااسکریپت رندر میشن -->
+      </div>
+    </div>
+  </main>
+
+  <!-- سایدبار سبد خرید (از سمت راست باز میشه) -->
+  <div class="cart-overlay" role="dialog" aria-modal="true" aria-label="Shopping cart">
+    <div class="cart">
+      <!-- هدر سبد خرید -->
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="cart-close" aria-label="Close cart">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      
+      <!-- لیست محصولات داخل سبد -->
+      <div class="cart-body"></div>
+      
+      <!-- فوتر سبد خرید (جمع کل + دکمه‌ها) -->
+      <div class="cart-footer">
+        <div class="total">
+          <span>Total:</span>
+          <strong class="cart-total">$0.00</strong>
+        </div>
+        <div class="actions">
+          <button class="continue-shopping">Continue Shopping</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
