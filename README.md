@@ -1,10 +1,7 @@
 # ShopProject –  Online Store
-
-![Preview](https://raw.githubusercontent.com/USERNAME/shopeproject/main/preview.jpg)
-
 A clean, fast, and fully responsive online store built with **pure HTML, Modern CSS, and Vanilla JavaScript** — no frameworks, no libraries, no build tools.
 
-Live Demo → https://shopeproject.vercel.app
+Live Demo → https://shop-project-three-rust.vercel.app/
 
 ## Features
 
